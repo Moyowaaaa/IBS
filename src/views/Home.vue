@@ -342,7 +342,7 @@ hr{
   display:flex;
 }
 .mob .MR{
-  Margin-left:65%
+  Margin-left:60% !important
 }
 .mob .ML img{
   
