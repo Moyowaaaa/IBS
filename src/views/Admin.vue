@@ -2,12 +2,13 @@
     <div class="admin"> 
 
 
- <div class="mob">
+<div class="mob">
   <div class="ML">
-                        <img src="../assets/download.jpg">
+                        <img src="../assets/download.png">
                     </div>
 
                     <div class="MR">
+                       <img  height="50px" src="../assets/download.jpg">
                       <span class="mbutton" style="font-size:40px;cursor:pointer" @click="openNav">
   &#9776;</span>
                       </div>
@@ -19,9 +20,7 @@
  <div id ="mobile" class="mobilenav">
       <a href="javascript:void(0)" class="closebtn" @click="closeNav">&times;</a>
       <div class="ml"  @click="closeNav">
-        <div class="mobileimg">
-           <img src="../assets/download.png">
-        </div>
+  
          <a>Login Time</a>
         <a >View Applicant</a>
         <a >Enter Score 1</a>
@@ -164,6 +163,9 @@
 
 
         </div>
+        <div class="footer">
+            <p>Powered by DIC &COPY; 2021</p>
+        </div>
     </div>
 </template>
 
@@ -254,16 +256,19 @@ h2{
     margin-left:10%
     }
     .footer{
-        height: auto;
-        background:teal;
-        bottom:0%;
-        margin-top:85vh
-    }
-    .footer p{
-        padding-top:3%;
-        font-size:20px;
-        text-align:center;
-        padding-bottom:3%
+    margin-top:1vh;
+    background:steelblue;
+    height: auto;
+    font-size: 20px;
+    overflow-y: hidden;
+    width:100%;
+    color:white;
+}
+.footer p{
+    text-align: center;
+    padding-top:1%;
+    padding-bottom:1%
+
     }.mob , .mobilee{
   display: none;
 }
@@ -344,8 +349,9 @@ th, td {
   .mob{
       display:flex;
   }
-  .mob .MR{
-    Margin-left:60% !important
+.mob .MR{
+  Margin-left:40% !important;
+  display:flex;
 }
 .mob .ML img{
   
@@ -376,6 +382,15 @@ th, td {
   
   margin-top:5%
 }
+.footer{
+    margin-top:70vh !important;
+    background:steelblue;
+    height: auto;
+    font-size: 20px;
+    overflow-y: hidden;
+    width:100%;
+    color:white;
+}
 }
 
 /* -----Tablets- */
@@ -384,6 +399,10 @@ th, td {
   display: block;
   text-align: center;
 }
+.mob .MR{
+  Margin-left:40%;
+  display:flex;
+}
 .mbutton{
   display:block
 }
@@ -391,7 +410,7 @@ th, td {
   display:flex;
 }
 .mob .MR{
-  Margin-left:80%
+  Margin-left:75% 
 }
 .mob .ML img{
   
@@ -428,6 +447,15 @@ th, td {
   padding: 8px;
   text-align: left;
   border-bottom: 1px solid #ddd;
+}
+.footer{
+    margin-top:75vh;
+    background:steelblue;
+    height: auto;
+    font-size: 20px;
+    overflow-y: hidden;
+    width:100%;
+    color:white;
 }
 }
 

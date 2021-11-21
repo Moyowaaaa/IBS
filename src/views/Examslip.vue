@@ -4,19 +4,21 @@
         <div class="content">
             <div class="body">
                 <div class="header">
-                     <img src="../assets/download.png">
+                     <img height="125px" src="../assets/download.png">
+
+                     <img class="iii" height="115px" src="../assets/download.jpg">
                 </div>
 
 
-                <h4>Semester</h4>
+                <h4>Examination Slip</h4>
 
 
                 <div class="user">
                     <div class="left">
                         <p>Name:</p>
-                        <p>Matric No:</p>
-                        <p>Faculty:</p>
-                        <p>Department:</p>
+                        <p>Candidate Identification Number:</p>
+                        <p>Post Applied For:</p>
+                        
                     </div>
 
 
@@ -27,22 +29,23 @@
                 </div>
 
 
+                <div class="exams">
+                    <p>Written Essay:</p>
 
-                <table id="courses">
-  <tr>
-    <th>Course Code</th>
-    <th>Course Title</th>
-    <th>Course Unit</th>
-  </tr>
- 
-</table>
+                <p>Computer Based Essay:</p>
+
+                <p>Oral Interview:</p>
+
+                <p>Development Plan:</p>
+                </div>
+                
 
 
 
 <div class="bottom">
     <div class="L">
         <p>
-            Students Signature
+            Applicants Signature
         </p>
     </div>
 
@@ -56,6 +59,11 @@
 
             </div>
         </div>
+
+
+        <div class="footer">
+            <p>Powered by DIC &COPY; 2021</p>
+        </div>
     </div>
 </template>
 
@@ -68,8 +76,15 @@ export default {
 
 
 <style scoped>
+body{
+    overflow-x:;
+}
 .header{
     height: 150px;
+    display:flex;
+}
+.header .iii{
+    margin-left:35%
 }
 .content{
     background:white;
@@ -77,7 +92,8 @@ export default {
     height:auto;
     margin-top:5vh;
     width:35%;
-    border:2px solid red
+   
+    border:2px solid steelblue
 }
 .content h4{
     text-align: center;
@@ -100,7 +116,7 @@ export default {
     font-size: 75px;
 }
 .left p{
-    font-weight: 600;
+    
     font-size: 16px;
 }
 #courses th {
@@ -140,6 +156,25 @@ export default {
     margin-left:60%;
     width:10%
 }
+.exams{
+    margin-left:5%;
+    margin-top:2%;
+    font-weight: 600;
+}
+.footer{
+    margin-top:8vh;
+    background:steelblue;
+    height: auto;
+    font-size: 20px;
+    overflow-y: hidden;
+    width:100%;
+    color:white;
+}
+.footer p{
+    text-align: center;
+    padding-top:2% !important;
+    padding-bottom:2% !important
+}
 
 /*-- Mobile Devices --*/
 @media screen and (max-width: 480px) {
@@ -158,6 +193,10 @@ export default {
         font-size:12px;
         margin-left:5%
     }
+    .header .iii{
+    margin-left:15% !important;
+    
+}
     
 }
 /* -----Tablets- */
@@ -165,6 +204,12 @@ export default {
     .content{
         width:80%;
         margin-left:10%
+    }
+    .header .iii{
+        margin-left:50%
+    }
+    .footer{
+    margin-top:13vh;
     }
 }
 </style>

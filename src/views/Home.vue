@@ -3,10 +3,11 @@
 
 <div class="mob">
   <div class="ML">
-                        <img src="../assets/download.jpg">
+                        <img src="../assets/download.png">
                     </div>
 
                     <div class="MR">
+                       <img  height="50px" src="../assets/download.jpg">
                       <span class="mbutton" style="font-size:40px;cursor:pointer" @click="openNav">
   &#9776;</span>
                       </div>
@@ -18,9 +19,7 @@
   <div id ="mobile" class="mobilenav">
       <a href="javascript:void(0)" class="closebtn" @click="closeNav">&times;</a>
       <div class="ml"  @click="closeNav">
-        <div class="mobileimg">
-           <img src="../assets/download.png">
-        </div>
+     
          <a>Login Time</a>
         <a >View Profile</a>
         <a >Institutional Materials</a>
@@ -139,6 +138,9 @@
                                   </div>
       </div>
     </div>
+       <div class="footer">
+            <p>Powered by DIC &COPY; 2021</p>
+        </div>
   </div>
 </template>
 
@@ -289,10 +291,24 @@ hr{
 .mbutton{
   display:none;
   position:sticky;
-  margin-top:5%;
+  margin-top:-1%;
 }
 .span{
   color:steelblue
+}
+.footer{
+    margin-top:17vh;
+    background:steelblue;
+    height: auto;
+    font-size: 20px;
+    overflow-y: hidden;
+    width:100%;
+    color:white;
+}
+.footer p{
+    text-align: center;
+    padding-top:1%;
+    padding-bottom:1%
 }
 
 
@@ -318,7 +334,9 @@ hr{
     flex-wrap: none;;
   }
   .flex .cont{
-    width:90%;
+    width:80% !important;
+    margin-left:20% !important;
+   
     margin-top:5%
   }
   .header, .L, .R{
@@ -342,7 +360,8 @@ hr{
   display:flex;
 }
 .mob .MR{
-  Margin-left:60% !important
+  Margin-left:40% !important;
+  display:flex;
 }
 .mob .ML img{
   
@@ -353,19 +372,26 @@ hr{
 }
 .mobilee{
   display: block;
-  text-align: center;
+
 }
 .mbutton{
-  display:block
+  display:block;
+  margin-top:1%
 }
 #mobile .ml a{
-  padding-top:5 %
+  padding-top:5%;
+  width:100%;
 }
 }
 
 
 /* -----Tablets- */
 @media screen and (max-width: 768px) {
+
+  .content{
+    width:85%;
+    margin-left:7.5%;
+  }
 
 .mobilee{
   display: block;
@@ -378,7 +404,8 @@ hr{
   display:flex;
 }
 .mob .MR{
-  Margin-left:80%
+  Margin-left:70%;
+  display:flex;
 }
 .mob .ML img{
   
@@ -390,9 +417,11 @@ hr{
      .header, .L, .R{
    
      display:none; 
-   }
-    .flex .cont{
-    width:70%;
+
+   }  .flex .cont{
+    width:80% !important;
+    margin-left:20% !important;
+ 
     margin-top:5%
   }
   #mobile .ml{

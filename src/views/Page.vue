@@ -48,9 +48,9 @@
 
            
         </div>
-         <footer class="footer">
-                <p>&copy; Powered by Dic</p>
-            </footer>
+        <div class="footer">
+            <p>Powered by DIC &COPY; 2021</p>
+        </div>
     </div>
 </template>
 
@@ -110,18 +110,19 @@ button{
     border:none;
 }
 .footer{
-    position:absolute;
-   bottom:0;
-   width:100%;
-   height:auto;   /* Height of the footer */
-   background:royalblue;
+    margin-top:17vh;
+    background:steelblue;
+    height: auto;
+    font-size: 20px;
+    overflow-y: hidden;
+    width:100%;
+    color:white;
 }
 .footer p{
-    margin-top:2%;
-    margin-bottom: 2%;
-    text-align:center;
-    font-size:20px;
-    color:white
+    text-align: center;
+    padding-top:1%;
+    padding-bottom:1%
+
 }.mbile{
     display: none;
 }
@@ -130,9 +131,7 @@ button{
 .content{
     display:block;
 }
-.footer{
-    display:none;
-}
+
 .nav{
     display: none;;
 }
@@ -156,17 +155,15 @@ h2{
     display:flex;
 }
 .mbile img{
-    height:150px;
-    width:300px
+    height:115px !important;
+    
 }
 
 
 }
 /* -----Tablets- */
 @media screen and (max-width: 768px) {
-.footer{
-    display:none;
-}
+
 .mbile img{
     height:150px;
     width:200px
