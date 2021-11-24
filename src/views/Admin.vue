@@ -2,6 +2,7 @@
     <div class="admin"> 
 
 
+      <!------mobile header------->
 <div class="mob">
   <div class="ML">
                         <img src="../assets/download.png">
@@ -16,6 +17,8 @@
                       
 
 </div>
+
+<!--------Mobile sidebar------->
 
  <div id ="mobile" class="mobilenav">
       <a href="javascript:void(0)" class="closebtn" @click="closeNav">&times;</a>
@@ -33,6 +36,8 @@
       </div>
   </div>
 
+  <!------------------>
+
 
 
 
@@ -43,6 +48,9 @@
         <div class="main">
 
             <div class="left">
+
+
+              <!-----side bar---->
 
                 <div class="side">
 
@@ -118,6 +126,8 @@
                 </div>
 
 
+                <!--------Table ------>
+
 <div class="ttt" style="overflow-x: auto;">
 <table>
   <tr>
@@ -136,36 +146,20 @@
   </table>
   </div>
 
-<!--------------
-                                <table id="courses">
-  <tr>
-    <th>Id</th>
-    <th>Name</th>
-    <th>Position Applied for</th>
+  <!----------------->
 
-    <th>Written Essay Score</th>
-    <th>Score 2</th>
-    <th>Score 3</th>
-
-    <th>Score 4</th>
-    <th>Average</th>
-    <th>Position Applied for</th>
-
-    
-    
-  </tr>
- 
-</table>
-------->
 
             </div>
 
 
 
         </div>
+
+        <!-------footer------------->
         <div class="footer">
             <p>Powered by DIC &COPY; 2021</p>
         </div>
+        <!-------->
     </div>
 </template>
 
@@ -183,7 +177,12 @@ closeNav() {
 }
 </script>
 
+<!-------styling-------->
+
+
 <style scoped>
+
+
 .nav{
     background:whitesmoke;
     display:flex;

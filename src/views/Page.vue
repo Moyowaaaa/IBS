@@ -1,11 +1,17 @@
 <template>
     <div>
 
+        <!---------mobile navbar---->
         <div class="mbile">
             <img style="height:125px" src="../assets/download.png">
 
             <img style="margin-left:10%; height:100px" src="../assets/download.jpg">
         </div>
+        <!----------------->
+
+
+
+        <!------NavBar---->
         <div class="nav">
             <div class="l">
                 <img src="../assets/download.png">
@@ -17,7 +23,10 @@
                 <img src="../assets/download.jpg">
             </div>
         </div>
+        <!------------->
 
+
+        <!------content----->
         <h2>Strategic Recruitment and ...... of TOP-LEVEL Management openings in the Civil Service</h2>
 
         <div class="content">
@@ -48,9 +57,14 @@
 
            
         </div>
+
+        <!----------->
+
+        <!------footer------>
         <div class="footer">
             <p>Powered by DIC &COPY; 2021</p>
         </div>
+        <!--------------->
     </div>
 </template>
 
@@ -61,9 +75,10 @@ export default {
 }
 </script>
 
-
+<!-------styling---->
 
 <style scoped>
+
 .nav{
     display:flex;
     border-bottom: 1px solid whitesmoke;;

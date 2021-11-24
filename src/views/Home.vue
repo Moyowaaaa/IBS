@@ -1,6 +1,7 @@
 <template>
   <div>
 
+    <!------mobile Header--->
 <div class="mob">
   <div class="ML">
                         <img src="../assets/download.png">
@@ -15,7 +16,10 @@
                       
 
 </div>
+<!------------------>
 
+
+<!----mobile sidebar--->
   <div id ="mobile" class="mobilenav">
       <a href="javascript:void(0)" class="closebtn" @click="closeNav">&times;</a>
       <div class="ml"  @click="closeNav">
@@ -28,6 +32,7 @@
         <a>FAQs</a>
       </div>
   </div>
+  <!------------>
 
 
 
@@ -35,16 +40,15 @@
 
 
 
-
-
- 
-
+<!----------main contents ---->
     <div class="main">
 
-
-
+      <!------left contents----->
       <div class="left">
          <div class="side">
+
+
+           <!--sidebar------>
 
 
                     <div >
@@ -78,11 +82,13 @@
 
                     
                 </div>
+                <!----------->
       </div>
 
 
 
       <div class="right">
+        <!--------right contents--------->
         <div class="header">
                     <div class="L">
                         <h1>TITLE</h1>
@@ -138,9 +144,14 @@
                                   </div>
       </div>
     </div>
+
+
+    <!-------footer------->
        <div class="footer">
             <p>Powered by DIC &COPY; 2021</p>
         </div>
+
+        <!----------------->
   </div>
 </template>
 
@@ -159,7 +170,7 @@ closeNav() {
 
 </script>
 
-
+<!-------styling---->
 
 <style scoped>
 .main{

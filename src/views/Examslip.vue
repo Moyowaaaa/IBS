@@ -2,33 +2,52 @@
     <div>
 
         <div class="content">
+
+
+
             <div class="body">
+
+
+                <!-------header--------->
                 <div class="header">
                      <img height="125px" src="../assets/download.png">
 
                      <img class="iii" height="115px" src="../assets/download.jpg">
                 </div>
 
+                
 
                 <h4>Examination Slip</h4>
 
+                <!------------>
+
+
 
                 <div class="user">
+
+
+                    <!------------details ---------->
                     <div class="left">
                         <p>Name:</p>
                         <p>Candidate Identification Number:</p>
                         <p>Post Applied For:</p>
                         
                     </div>
+                    <!------------->
 
 
 
+
+                    <!-----Profile picture------>
                     <div class="right">
                         <i class="fa fa-user"></i>
                     </div>
                 </div>
+                <!----------------->
 
 
+
+                <!--------Exams------>
                 <div class="exams">
                     <p>Written Essay:</p>
 
@@ -38,10 +57,13 @@
 
                 <p>Development Plan:</p>
                 </div>
-                
+
+                <!---------------->
 
 
 
+
+                <!------------------->
 <div class="bottom">
     <div class="L">
         <p>
@@ -55,15 +77,20 @@
     </div>
 </div>
 
+<!-------------->
+
 
 
             </div>
         </div>
 
+        <!-----------footer------>
 
         <div class="footer">
             <p>Powered by DIC &COPY; 2021</p>
         </div>
+
+        <!------------>
     </div>
 </template>
 
@@ -74,7 +101,7 @@ export default {
 }
 </script>
 
-
+<!-------styling---->
 <style scoped>
 body{
     overflow-x:;
